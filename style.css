@@ -1,0 +1,327 @@
+/*Обнуление*/
+*{
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+*,*:before,*:after{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+nav,footer,header,aside{display: block;}
+html,body{
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	line-height: 2;
+	font-size: 14px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+input,button,textarea{font-family:inherit;}
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
+/*Шрифты*/
+@font-face {
+	font-family: 'Gilroy';
+	src: url('../fonts/Gilroy-Bold.eot');
+	src: local('☺'), url('../fonts/Gilroy-Bold.woff') format('woff'), url('../fonts/Gilroy-Bold.ttf') format('truetype'), url('../fonts/Gilroy-Bold.svg') format('svg');
+	font-weight: 700;
+	font-style: 700;
+}
+@font-face {
+	font-family: 'Gilroy';
+	src: url('../fonts/Gilroy-Medium.eot');
+	src: local('☺'), url('../fonts/Gilroy-Medium.woff') format('woff'), url('../fonts/Gilroy-Medium.ttf') format('truetype'), url('../fonts/Gilroy-Medium.svg') format('svg');
+	font-weight: 500;
+	font-style: 500;
+}
+body{
+	font-family: Gilroy;
+	height: 100%;
+}
+/*Страница*/
+.wraper{
+min-height: 100%;
+overflow: hidden;
+display: flex;
+flex-direction: column;
+}
+.main{
+	flex:1 1 auto;
+	padding: 0px 0 45px 0;
+}
+/*Модификаторы*/
+._container {
+	max-width: 947px;
+	margin: 0px auto;
+	box-sizing: content-box;
+}
+/*Шапка*/
+.header {
+	position: absolute;
+	width: 100%;
+	left: 0;
+	top: 0;
+	z-index: 50;
+}
+.header__container {
+	border-bottom: 1px solid #828282;
+}
+.header__list {
+	display: flex;
+	justify-content: space-between;
+	margin: 30px 0;
+	text-align: center;
+}
+.menu__item {
+	flex: 0 1 auto;
+}
+.menu__link {
+	color:#828282;
+	font-size: 18px;
+line-height: 122%;
+font-weight: 700;
+}
+.menu__link:hover{
+	color: #070707;
+}
+/*Биография*/
+.bio {
+	padding: 128px 0 0 8px;
+}
+.bio__items {
+	background-color: #fff;
+	display: flex;
+	align-items: flex-end;
+}
+.bio__title {
+	min-width: 20%;
+	font-size: 48px;
+line-height: 125%;
+max-width: 125px;
+font-weight: 700;
+}
+.bio__text {
+	min-width: 75%;
+	padding: 0 0 10px 0;
+	max-width: 160px;
+	font-size: 18px;
+line-height: 122%;
+color: #070707;
+display:flex;
+justify-content:center;
+padding: 0 0 10px 0;
+}
+.bio__language {
+	font-weight: 700;
+	align-self: center;
+	min-width: 5%;
+	transform: rotate(-90deg);
+}
+.bio__language:hover{
+	color:#828282;
+}
+.button {
+	transform: translate(-25px, 28.5px)	;
+}
+.ru {
+	color: #828282;
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 130%;
+	background-color: #fff;
+}
+
+.eng {
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 130%;
+	color: #828282;
+	background-color: #fff;
+}
+.ru:hover{
+	color: #070707;
+}
+.eng:hover{
+	color: #070707;
+}
+.img{
+	margin: 54px 0 0 0;
+	max-width: 100%;
+	max-height: 100%;
+	width: 943px;
+	height: 387px;
+	background: url('../img/BSPP2266.jpg');
+	object-position: center;
+}
+
+/*Об о мне*/
+.page__about {
+	margin: 104px 0 0 0;
+	background-color: #F6F6F6;
+}
+.about__items {
+	text-align: center;
+}
+.about__title {
+	margin: 0 0 48px 0;
+	padding: 120px 0 0 0;
+	color: #070707	;
+	font-size: 34px;
+line-height: 123%;
+font-weight: 700;
+}
+.about__text {
+	font-size: 18px;
+line-height: 122%;
+color: #070707;
+}
+p{
+	margin: 0 0 48px 0;
+}
+p:last-child{
+	padding: 0 0 108px 0;
+}
+/*Навыки*/
+.page__skills {
+	padding: 91px 0 0 0;
+}
+.skills__title {	
+	text-align: center;
+	font-size: 34px;
+line-height: 123%;
+font-weight: 700;
+}
+.skills__subtitle {
+	margin: 69px 0 0 0;
+	font-size: 18px;
+line-height: 122%;
+text-align: center;
+}
+.skills__column {
+	margin: 83px 0 0 0;
+	display: flex;
+	flex-direction: row;
+}
+
+.column__items {
+	flex:1 1 25%;
+
+}
+.column__item {
+	display: flex;
+	justify-content: center;
+}
+.column__text {
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	padding: 23px 0px 0 0;
+}
+.column__stars {
+	display: flex;
+	justify-content: center;
+	padding: 41px 0 0 0;
+	margin:0 0 110px 0;
+}
+._ps img{
+	filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+	background: radial-gradient(75.99% 75.64% at 32.94% 22.44%, rgba(52, 54, 78, 0.98) 0%, #0C0824 100%);
+}
+
+/*Портфолео*/
+.page__portfolio {
+	padding: 110px 0 0 0;
+	background-color: #F6F6F6;
+}
+.portfolio__container {
+	padding: 0 0 96px 0;/
+}
+.portfolio {
+	text-align: center;
+}
+.portfolio__title {
+	font-size: 34px;
+	line-height: 123%;
+	font-weight: 700;
+}
+.portfolio__img {
+	padding: 99px 0 45px 0;
+	height: 100%;
+	width: 100%;
+}
+._woman{
+	padding: 47px 0 45px 0;
+}
+.portfolio__link {
+	padding: 45px 0 0 0;
+	text-decoration-line: underline;
+	font-size: 18px;
+line-height: 122%;
+color: #070707;
+}
+/*Контакты*/
+.contacts__container {
+	padding: 114px 0 0 0;
+	text-align: center;
+}
+.contacts__items {
+}
+.contacts__title {
+	font-size: 34px;
+line-height: 123%;
+font-weight: 700;
+}
+.contacts__subtitle {
+	font-size: 18px;
+line-height: 122%;
+margin: 20px 0 30px 0;
+}
+.contacts_button {
+	position: relative;
+	display: inline-block;
+	width: 180px;
+	height: 42px;
+	background: #070707;
+	align-items: center;
+	border-radius: 150px;
+}
+.button__text {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	text-align: center;
+	font-size: 18px;
+	line-height: 122%;
+	padding: 10px 0 0 0;
+	color: #FFFFFF;
+}
+.contacts__column__items {
+	display: flex;
+	justify-content: center;
+}
+.conntacts__column__item {
+	display: flex;
+	margin: 85px 61px 0 0;
+	align-items: center;
+	justify-content: center;
+}
+/*Подвал*/
+.footer {
+	margin:0 0 123px 0;
+	text-align: center;
+	font-size: 14px;
+	line-height: 121%;
+}
